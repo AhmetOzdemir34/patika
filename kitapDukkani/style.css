@@ -1,0 +1,13 @@
+.links{
+    text-align: center;
+}
+.links a{
+    margin: 0 1rem 0 1rem;
+}
+.main-ol{
+    text-align: center;
+    list-style-position: inside;
+}
+.sec-ol li{
+    margin: 1rem 0 1rem 0;
+}

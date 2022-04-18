@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://www.wallpapertip.com/wmimgs/149-1491561_sky-blue-hd-background-image-for-banner-light.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+img{
+  width: 100vh;
+  height: 100vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0;  
+  
+}
+ul li p {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: flex; 
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
+  border-radius: 15px;
+  text-align: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #276678;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -1px;
+
+}
+h1{
+  font-family: 'Hurricane', cursive;
+  font-size: 64px;
+  color: rgb(0, 0, 0);
+}
+
+.close:hover {
+  background-color: #bd9a9a;
+  color: white;
+
+}
+
+.header {
+  
+  background-color: rgba(108, 170, 166, 0.5);
+  padding: 30px 40px;
+  color: rgb(0, 0, 0);
+  text-align: center; 
+  border-radius: 20px;  
+  font-size: 20px;  
+}
+
+img {
+  background-color: white;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  border-start-start-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.button {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+  border-top-right-radius: 10px ;
+  border-bottom-right-radius: 10px;
+  color: black;
+}
+
+.button:hover {
+  background-color: #bbb;
+}
+
+ul li button {
+  color:rgb(0, 0, 0);
+  margin-top: 1px;
+  margin-right: 2px;
+  border-radius: 15px; 
+}
+#deleteButton {
+  padding: 10px;
+}
+.down a:link{
+  text-decoration: none;
+}
+.down a:hover {
+  text-decoration: none;
+}
+.down a:visited {
+  text-decoration: none;
+  
+}
+.down a:active {
+  text-decoration: none;
+}
+.addList {
+  display:  flex;
+  justify-content: flex-start;
+}
+.edit-btn{
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: var(--transition);
+}
+.edit-btn {
+  color: var(--clr-green-light);
+}
+.edit-btn:hover {
+  color: var(--clr-green-dark);
+}

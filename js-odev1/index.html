@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(64, 103, 109);
+        }
+        h2,h3,p{
+            color: white;
+            text-align: center;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 44px;
+        }
+        h3{
+            font-size: 32px;
+        }
+        #name{
+            color: rgb(239, 227, 95);
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h2>Kodluyoruz</h2>
+        <h3>Merhaba, <span id="name"></span></h3>
+        <p id="vakit"></p>
+        <p>tarihinde Kodluyoruz Frontend Web Development Patikası'nın 1. Ödevindeyiz.</p>
+    </div>
+
+    <script>
+        let value = prompt("Adınızı giriniz: ");
+        document.getElementById("name").innerText = value+"!";
+
+        setInterval(saat,1000);
+
+        function saat () {
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date+' '+time;
+            document.getElementById("vakit").innerText = dateTime;
+        }
+    </script>
+</body>
+</html>
